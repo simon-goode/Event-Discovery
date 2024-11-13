@@ -33,7 +33,7 @@ Because this implementation uses slow web scraping and OpenAI API calls, it take
 - openai
 - selenium
 
-Easy to use!:
+Easy-use instructions:
 1. Clone repo
 2. Replace input_json.json with your own input file
 3. run main.py
