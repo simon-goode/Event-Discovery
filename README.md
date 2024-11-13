@@ -28,12 +28,13 @@ Each event is scored from 0 to 1 according to how similar (via cosine similarity
 Because this implementation uses slow web scraping and OpenAI API calls, it takes ~15 seconds to run. Speed (and quality of results) could likely be improved with calls to a dedicated industry event API like PredictHQ or BizProspex Events API.
 
 ### Dependencies and Installation
+**dependencies**:
 - pandas
 - json
 - openai
 - selenium
 
-Easy-use instructions:
+**Easy-use instructions**:
 1. Clone repo
 2. Replace input_json.json with your own input file
 3. run main.py
