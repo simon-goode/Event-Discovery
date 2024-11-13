@@ -1,6 +1,9 @@
 # Event-Discovery
 Event Discovery Coding Challenge for Shmooze.
 
+### Summary
+Accepts input data as JSON with tags for target audience, key goals, and other business goals for an industry event. Outputs (as JSON file) a top 10 list of the most relevant industry events from 10times.com.
+
 ### Assumptions
 
 Input file is JSON with following structure:
@@ -14,3 +17,9 @@ Input file is JSON with following structure:
     "KPIs": "relevant metrics or outcomes that the marketer aims to achieve from the event"
   }
   ```
+An example input file is included in the src directory.
+
+The output JSON file will contain a list of events, with Event Name, Event URL, Event Description, and Request-Matching Score taglined. An example output file is included in the src directory.
+
+### Improvements
+Because this implementation uses slow web scraping and OpenAI API calls, it takes ~15 seconds to run. Speed (and quality of results) could likely be improved with calls to a dedicated industry event API like PredictHQ or BizProspex Events API.
