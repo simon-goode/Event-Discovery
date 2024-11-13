@@ -21,5 +21,8 @@ An example input file is included in the src directory.
 
 The output JSON file will contain a list of events, with Event Name, Event URL, Event Description, and Request-Matching Score taglined. An example output file is included in the src directory.
 
+### Scoring
+Each event is scored from 0 to 1 according to how similar (via cosine similarity of OpenAI embeddings) the event is to the input request.
+
 ### Improvements
 Because this implementation uses slow web scraping and OpenAI API calls, it takes ~15 seconds to run. Speed (and quality of results) could likely be improved with calls to a dedicated industry event API like PredictHQ or BizProspex Events API.
