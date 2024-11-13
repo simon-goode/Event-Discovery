@@ -1,5 +1,5 @@
 # Event-Discovery
-Event Discovery Coding Challenge for Shmooze.
+Event Discovery Coding Challenge.
 
 ### Summary
 Accepts input data as JSON with tags for target audience, key goals, and other business goals for an industry event. Outputs (as JSON file) a top 10 list of the most relevant industry events from 10times.com.
@@ -36,6 +36,7 @@ Because this implementation uses slow web scraping and OpenAI API calls, it take
 
 **Easy-use instructions**:
 1. Clone repo
-2. Replace input_json.json with your own input file
-3. run main.py
-4. read output.json file
+2. Input your own OpenAI API key in scoring.py
+3. Replace input_json.json with your own input file
+4. run main.py
+5. read output.json file
